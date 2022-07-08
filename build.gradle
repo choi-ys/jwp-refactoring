@@ -45,9 +45,13 @@ subprojects {
 }
 
 project(':module-common') {
+    bootJar { enabled = false }
+    jar { enabled = true }
 }
 
 project(':module-product') {
+    bootJar { enabled = false }
+    jar { enabled = true }
     dependencies {
         implementation project(':module-common')
         testImplementation project(':module-common').sourceSets.test.output
@@ -55,13 +59,18 @@ project(':module-product') {
 }
 
 project(':module-menu') {
+    bootJar { enabled = false }
+    jar { enabled = true }
     dependencies {
         implementation project(':module-common')
         implementation project(':module-product')
+        testImplementation project(':module-common').sourceSets.test.output
     }
 }
 
 project(':module-table') {
+    bootJar { enabled = false }
+    jar { enabled = true }
     dependencies {
         implementation project(':module-common')
         implementation project(':module-product')
@@ -70,6 +79,8 @@ project(':module-table') {
 }
 
 project(':module-order') {
+    bootJar { enabled = false }
+    jar { enabled = true }
     dependencies {
         implementation project(':module-common')
         implementation project(':module-product')
