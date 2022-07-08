@@ -1,7 +1,7 @@
 package kitchenpos.application;
 
-import static kitchenpos.utils.generator.ProductFixtureGenerator.상품_목록_생성;
-import static kitchenpos.utils.generator.ProductFixtureGenerator.상품_생성_요청_객체;
+import static kitchenpos.utils.ProductFixtureGenerator.상품_목록_생성;
+import static kitchenpos.utils.ProductFixtureGenerator.상품_생성_요청_객체;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.mockito.ArgumentMatchers.any;
@@ -9,11 +9,10 @@ import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
 
 import java.util.List;
-import kitchenpos.product.application.ProductService;
-import kitchenpos.product.domain.Product;
-import kitchenpos.product.repository.ProductRepository;
-import kitchenpos.product.dto.CreateProductRequest;
-import kitchenpos.product.dto.ProductResponse;
+import kitchenpos.domain.Product;
+import kitchenpos.dto.CreateProductRequest;
+import kitchenpos.dto.ProductResponse;
+import kitchenpos.repository.ProductRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

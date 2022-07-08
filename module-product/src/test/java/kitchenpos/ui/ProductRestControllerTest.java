@@ -1,13 +1,13 @@
 package kitchenpos.ui;
 
 import static kitchenpos.utils.MockMvcUtil.as;
-import static kitchenpos.utils.generator.ProductFixtureGenerator.상품_생성_요청;
+import static kitchenpos.utils.ProductFixtureGenerator.상품_생성_요청;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.header;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import kitchenpos.product.dto.ProductResponse;
+import kitchenpos.dto.ProductResponse;
 import kitchenpos.utils.BaseTest;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

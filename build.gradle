@@ -50,6 +50,7 @@ project(':module-common') {
 project(':module-product') {
     dependencies {
         implementation project(':module-common')
+        testImplementation project(':module-common').sourceSets.test.output
     }
 }
 

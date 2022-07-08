@@ -1,4 +1,4 @@
-package kitchenpos.product.domain;
+package kitchenpos.domain;
 
 import java.math.BigDecimal;
 import java.util.Objects;
@@ -9,8 +9,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
-import kitchenpos.common.wrap.Name;
-import kitchenpos.product.domain.wrap.Price;
+import kitchenpos.domain.wrap.Name;
+import kitchenpos.domain.wrap.Price;
 
 @Entity
 @Table(

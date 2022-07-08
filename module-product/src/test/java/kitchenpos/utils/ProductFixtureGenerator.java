@@ -1,4 +1,4 @@
-package kitchenpos.utils.generator;
+package kitchenpos.utils;
 
 import static kitchenpos.ui.ProductRestControllerTest.PRODUCT_API_URL_TEMPLATE;
 import static kitchenpos.utils.MockMvcUtil.postRequestBuilder;
@@ -6,8 +6,8 @@ import static kitchenpos.utils.MockMvcUtil.postRequestBuilder;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
-import kitchenpos.product.domain.Product;
-import kitchenpos.product.dto.CreateProductRequest;
+import kitchenpos.domain.Product;
+import kitchenpos.dto.CreateProductRequest;
 import org.springframework.boot.test.context.TestComponent;
 import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder;
 
